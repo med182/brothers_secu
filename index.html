@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Brothers Security Services</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <img
+          src="./images/logo.jpg"
+          alt="Logo de Brothers Security Services"
+          class="logo"
+        />
+        <h1 class="devise">Votre Satisfaction est Notre Priorité</h1>
+      </div>
+    </header>
+
+    <section id="introduction">
+      <div class="container">
+        <h2>Introduction</h2>
+        <p>
+          Nous améliorons nos services de surveillance, de gardiennage, de
+          rondes et d'interventions en mettant l'accent sur l'efficacité, la
+          réactivité et le respect du client.
+        </p>
+      </div>
+    </section>
+
+    <section id="a-propos">
+      <div class="container">
+        <h2>À Propos de Nous</h2>
+        <p>
+          Brothers Security Services c'est avant tout
+          <strong>Réactivité, Efficacité, Fiabilité</strong>.
+        </p>
+      </div>
+    </section>
+
+    <section id="expertise">
+      <div class="container">
+        <h2>Notre Expertise</h2>
+        <p>
+          Notre équipe s'efforce de vous apporter le meilleur avec ses
+          compétences professionnelles et son savoir-faire.
+        </p>
+        <ul>
+          <li>Surveillance</li>
+          <li>Gardiennage</li>
+          <li>Protection</li>
+          <li>Rondes et Interventions</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="secteurs">
+      <div class="container">
+        <h2>Secteurs</h2>
+        <ul>
+          <li>Industries</li>
+          <li>Centres Commerciaux</li>
+          <li>Magasins</li>
+          <li>Hôtels</li>
+          <li>Parkings</li>
+          <li>Collectivités</li>
+          <li>Institutions Publiques</li>
+          <li>
+            Événements (Salons, Expositions, Forums, Discothèques, Bars,
+            Défilés)
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="personnel">
+      <div class="container">
+        <h2>Notre Personnel</h2>
+        <p>
+          Nous recrutons notre personnel en conformité avec la loi du 12 juillet
+          1983 réglementant les activités privées de surveillance et de
+          gardiennage.
+        </p>
+        <ul>
+          <li>Agents de Sécurité</li>
+          <li>Agents de Surveillance</li>
+          <li>Agents de Protection</li>
+          <li>Agents de Transport de Fonds</li>
+          <li>Inspecteurs de Sécurité</li>
+          <li>Et bien plus...</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="clients">
+      <div class="container">
+        <h2>Clients</h2>
+        <ul>
+          <li>PRUNIER</li>
+          <li>MP REA</li>
+          <li>RPM WAGRAM</li>
+          <li>LFR</li>
+          <li>Et bien plus...</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="container">
+        <h2>Contactez-Nous</h2>
+        <address>
+          5 Terrasse de l'Université, 92000 Nanterre<br />
+          Téléphone : 06 51 84 47 34<br />
+          Email :
+          <a href="mailto:contact@bsssecurityservices.com"
+            >contact@bsssecurityservices.com</a
+          >
+        </address>
+        <form>
+          <label for="nom">Nom :</label>
+          <input type="text" id="nom" name="nom" required />
+
+          <label for="email">Email :</label>
+          <input type="email" id="email" name="email" required />
+
+          <label for="telephone">Téléphone :</label>
+          <input type="tel" id="telephone" name="telephone" />
+
+          <label for="message">Message :</label>
+          <textarea id="message" name="message" required></textarea>
+
+          <button type="submit">Envoyer</button>
+        </form>
+      </div>
+    </section>
+
+    <footer>
+      <div class="container">
+        <p>&copy; 2024 Brothers Security Services. Tous droits réservés.</p>
+        <nav>
+          <ul>
+            <li><a href="#introduction">Introduction</a></li>
+            <li><a href="#a-propos">À Propos</a></li>
+            <li><a href="#expertise">Expertise</a></li>
+            <li><a href="#secteurs">Secteurs</a></li>
+            <li><a href="#personnel">Personnel</a></li>
+            <li><a href="#clients">Clients</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </footer>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        let elements = document.querySelectorAll("header, section, footer");
+
+        elements.forEach(function (element) {
+          element.style.opacity = 0;
+          element.style.transition = "opacity 2s ease-in-out";
+        });
+
+        function fadeIn() {
+          let delay = 0;
+          elements.forEach(function (element) {
+            setTimeout(function () {
+              element.style.opacity = 1;
+            }, delay);
+            delay += 500;
+          });
+        }
+
+        fadeIn();
+      });
+    </script>
+  </body>
+</html>
